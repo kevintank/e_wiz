@@ -1,0 +1,66 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: TestDlg - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\JMK\LOCALS~1\Temp\RSP88.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/TestDlg.pdb" /debug /machine:I386 /out:"Debug/TestDlg.exe" /pdbtype:sept 
+".\Debug\Ado.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SubFormCollection.obj"
+".\Debug\SubFormDlg1.obj"
+".\Debug\SubFormDlg2.obj"
+".\Debug\SubFormDlg3.obj"
+".\Debug\SubFormDlg4.obj"
+".\Debug\SubFormDlg5.obj"
+".\Debug\SubFormDlg6.obj"
+".\Debug\SubFormDlg7.obj"
+".\Debug\TestDlg.obj"
+".\Debug\TestDlgDlg.obj"
+".\Debug\xSkinButton.obj"
+".\Debug\TestDlg.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\JMK\LOCALS~1\Temp\RSP88.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : LNK6004: Debug/TestDlg.exe not found or not built by the last incremental link; performing full link
+Ado.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+Ado.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+StdAfx.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+StdAfx.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormCollection.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormCollection.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormDlg1.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormDlg1.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormDlg2.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormDlg2.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormDlg3.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormDlg3.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormDlg4.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormDlg4.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormDlg5.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormDlg5.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormDlg6.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormDlg6.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormDlg7.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+SubFormDlg7.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+TestDlg.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+TestDlg.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+TestDlgDlg.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+TestDlgDlg.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+xSkinButton.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugCRT' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+xSkinButton.obj : warning LNK4044: unrecognized option "manifestdependency:type='win32' name='Microsoft.VC90.DebugMFC' version='9.0.21022.8' processorArchitecture='x86' publicKeyToken='1fc8b3b9a1e18e3b'"; ignored
+LINK : fatal error LNK1104: cannot open file "mfc90d.lib"
+Error executing link.exe.
+
+
+
+<h3>Results</h3>
+TestDlg.exe - 1 error(s), 26 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,435 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Korean resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 18, 1\r\n"
+    "#pragma code_page(949)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TestDlg.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.kor\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\TestDlg.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "TestDlg 정보"
+FONT 9, "굴림"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "TestDlg 버전 1.0",IDC_STATIC,40,10,119,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "확인",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_MAINFORM DIALOGEX 0, 0, 457, 398
+STYLE WS_POPUP | WS_VISIBLE | WS_BORDER
+EXSTYLE WS_EX_APPWINDOW
+FONT 9, "굴림", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "",IDC_SUBFORM_FRAME,0,16,457,379,NOT WS_VISIBLE
+    PUSHBUTTON      "",IDC_B_MINI,415,0,18,11,BS_FLAT
+    PUSHBUTTON      "",IDC_B_CLOSE,436,0,19,11,BS_FLAT
+END
+
+IDD_SUBFORM1 DIALOG DISCARDABLE  0, 0, 400, 302
+STYLE DS_CONTROL | WS_CHILD | WS_BORDER
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "",IDC_BUTTON_START,232,207,111,30
+    PUSHBUTTON      "",IDC_BUTTON_SAMPLE,29,65,119,28
+    PUSHBUTTON      "",IDC_BUTTON_DAP,29,183,109,20
+END
+
+IDD_SUBFORM2 DIALOG DISCARDABLE  0, 0, 383, 277
+STYLE DS_CONTROL | WS_CHILD | WS_BORDER
+FONT 10, "System"
+BEGIN
+    LTEXT           "출제할 범위를 선택하세요 ",IDC_STATIC,7,7,100,10
+    PUSHBUTTON      "이전",IDC_BUTTON_PREV,109,249,72,21
+    PUSHBUTTON      "다음",IDC_BUTTON_NEXT,191,249,72,21
+    GROUPBOX        "시작일차와 종료 일차를 선택하세요",IDC_STATIC,86,76,210,
+                    71
+    LTEXT           "시작일차",IDC_STATIC,100,109,36,9
+    COMBOBOX        IDC_COMBO_FIRST,142,109,45,70,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "종료일차",IDC_STATIC,192,111,34,9
+    COMBOBOX        IDC_COMBO_LAST,235,110,47,70,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_SUBFORM3 DIALOG DISCARDABLE  0, 0, 383, 277
+STYLE DS_CONTROL | WS_CHILD | WS_BORDER
+FONT 10, "System"
+BEGIN
+    LTEXT           "출제방법 선택",IDC_STATIC,7,7,58,10
+    PUSHBUTTON      "뒤로가기",IDC_BUTTON_PREV,70,249,72,21
+    LTEXT           "출제범위",IDC_STATIC,7,29,35,11
+    LTEXT           "일차 ",IDC_STATIC,41,49,17,10
+    EDITTEXT        IDC_DAY_FIRST,17,47,23,12,NOT WS_BORDER
+    LTEXT           "일차",IDC_STATIC,85,49,17,8
+    EDITTEXT        IDC_DAY_LAST,58,47,26,12,NOT WS_BORDER
+    LTEXT           "이 범위 안에서 만들어 낼 수 있는 최대 문제수는 ",
+                    IDC_STATIC,17,69,170,10
+    EDITTEXT        IDC_TOTNUM,190,68,23,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    LTEXT           "문제 입니다.",IDC_STATIC,216,70,49,8
+    LTEXT           "문제 출제의 방식 설정",IDC_STATIC,20,99,83,10
+    LTEXT           "자동출제:문제출제 마법사가 알아서 문제를 자동으로 출제합니다.",
+                    IDC_STATIC,21,118,233,10
+    LTEXT           "선택출제:사용자가 단어를 골라 문제를 출제 합니다.",
+                    IDC_STATIC,23,136,185,12
+    PUSHBUTTON      "자동출제",IDC_BUTTON_AUTO,154,249,72,21
+    PUSHBUTTON      "선택출제",IDC_BUTTON_SELECT,238,249,72,21
+END
+
+IDD_SUBFORM4 DIALOG DISCARDABLE  0, 0, 383, 277
+STYLE DS_CONTROL | WS_CHILD | WS_BORDER
+FONT 10, "System"
+BEGIN
+    LTEXT           "문항수및 문제유형선택",IDC_STATIC,7,7,89,11
+    LTEXT           "최대문제수",IDC_STATIC,7,41,43,9
+    EDITTEXT        IDC_DAY_FIRST,14,55,23,12,ES_AUTOHSCROLL
+    LTEXT           "일차",IDC_STATIC,36,56,17,12
+    EDITTEXT        IDC_DAY_LAST,61,55,23,12,ES_AUTOHSCROLL
+    LTEXT           "일차 이범위 안에서 출제할 수 있는 최대 문제 수는  ",
+                    IDC_STATIC,85,56,179,9
+    EDITTEXT        IDC_TOTNUM,266,55,23,12,ES_AUTOHSCROLL
+    LTEXT           "문제 입니다.",IDC_STATIC,294,56,73,9
+    LTEXT           "출제 유형의 선택",IDC_STATIC,14,76,60,13
+    LTEXT           "1.단어의 뜻 쓰기",IDC_STATIC,17,98,66,8
+    COMBOBOX        IDC_COMBO_ONE,85,96,50,70,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "문제",IDC_STATIC,147,97,19,8
+    LTEXT           "2.단어 쓰기",IDC_STATIC,17,119,66,9
+    COMBOBOX        IDC_COMBO_TWO,85,117,49,70,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "문제",IDC_STATIC,146,118,19,9
+    LTEXT           "3.빈칸 채우기",IDC_STATIC,17,141,65,9
+    COMBOBOX        IDC_COMBO_THREE,84,139,50,70,CBS_DROPDOWN | 
+                    CBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "문제",IDC_STATIC,148,140,18,9
+    PUSHBUTTON      "뒤로가기",IDC_BUTTON_PREV,101,249,72,21
+    PUSHBUTTON      "다음단계",IDC_BUTTON_NEXT,194,249,72,21
+    LTEXT           "선택하신 문항수는 총",IDC_STATIC,179,76,81,9
+    EDITTEXT        IDC_EDIT_SELECT,266,72,25,12,ES_AUTOHSCROLL
+    LTEXT           "문제 입니다.",IDC_STATIC,295,73,47,9
+END
+
+IDD_SUBFORM5 DIALOG DISCARDABLE  0, 0, 383, 277
+STYLE DS_CONTROL | WS_CHILD | WS_BORDER
+FONT 10, "System"
+BEGIN
+    LTEXT           "문제수 확인",IDC_STATIC,7,7,45,9
+    LTEXT           "최대문제수",IDC_STATIC,30,33,46,8
+    EDITTEXT        IDC_EDIT1,32,48,23,12,ES_AUTOHSCROLL
+    LTEXT           "일차",IDC_STATIC,56,50,18,8
+    EDITTEXT        IDC_EDIT2,85,47,20,13,ES_AUTOHSCROLL
+    LTEXT           "일차 범위 안에서 출제할 수 있는 최대 문제 수는 ",
+                    IDC_STATIC,108,50,171,8
+    EDITTEXT        IDC_EDIT3,278,48,23,12,ES_AUTOHSCROLL
+    LTEXT           "문제 입니다.",IDC_STATIC,307,50,46,10
+    PUSHBUTTON      "뒤로 가기",IDC_BUTTON_PREV,114,249,72,21
+    PUSHBUTTON      "다음 단계",IDC_BUTTON_NEXT,201,249,72,21
+END
+
+IDD_SUBFORM6 DIALOG DISCARDABLE  0, 0, 383, 277
+STYLE DS_CONTROL | WS_CHILD | WS_BORDER
+FONT 10, "System"
+BEGIN
+    LTEXT           "문제지 출력 양식 쓰기",IDC_STATIC,7,7,80,8
+    LTEXT           "학원/학교명",IDC_STATIC,7,24,45,8
+    EDITTEXT        IDC_EDIT1,7,37,297,12,ES_AUTOHSCROLL
+    LTEXT           "시험명",IDC_STATIC,7,61,28,9
+    EDITTEXT        IDC_EDIT2,7,73,295,13,ES_AUTOHSCROLL
+    CONTROL         "입력된 내용 저장",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,67,118,77,13
+    CONTROL         "시험명 자동 추가",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,177,118,72,16
+    PUSHBUTTON      "뒤로가기",IDC_BUTTON_PREV,105,249,72,21
+    PUSHBUTTON      "다음 단계",IDC_BUTTON_NEXT,183,249,72,21
+END
+
+IDD_SUBFORM7 DIALOG DISCARDABLE  0, 0, 383, 277
+STYLE DS_CONTROL | WS_CHILD | WS_BORDER
+FONT 9, "굴림체"
+BEGIN
+    LTEXT           "수정및 인쇄하기",IDC_STATIC,7,7,60,9
+    PUSHBUTTON      "문제지미리보기",IDC_BUTTON1,7,17,65,13
+    PUSHBUTTON      "답안지미리보기",IDC_BUTTON2,71,17,65,13
+    PUSHBUTTON      "문제지인쇄",IDC_BUTTON3,135,17,63,13
+    PUSHBUTTON      "답안지인쇄",IDC_BUTTON4,198,17,65,13
+    LTEXT           "남은문제",IDC_STATIC,7,35,36,8
+    COMBOBOX        IDC_COMBO1,7,48,116,12,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      ">>",IDC_BUTTON5,162,71,15,10
+    PUSHBUTTON      "<<",IDC_BUTTON6,160,87,18,11
+    PUSHBUTTON      ">>",IDC_BUTTON7,163,125,22,12
+    PUSHBUTTON      "<<",IDC_BUTTON8,163,140,22,12
+    PUSHBUTTON      ">>",IDC_BUTTON9,165,186,22,12
+    PUSHBUTTON      "<<",IDC_BUTTON10,165,201,24,11
+    LTEXT           "뜻쓰기",IDC_STATIC,227,47,25,8
+    LTEXT           "단어쓰기",IDC_STATIC,227,108,33,8
+    LTEXT           "빈칸",IDC_STATIC,227,168,18,9
+    PUSHBUTTON      "뒤로 ",IDC_BUTTON_PREV,115,249,72,21
+    PUSHBUTTON      "닫기",IDC_BUTTON_END,200,249,72,21
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,7,72,128,165
+    CONTROL         "List2",IDC_LIST2,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,224,58,120,45
+    CONTROL         "List3",IDC_LIST3,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,226,121,118,43
+    CONTROL         "List4",IDC_LIST4,"SysListView32",LVS_REPORT | WS_BORDER | 
+                    WS_TABSTOP,227,184,116,54
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "041204B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TestDlg MFC 응용 프로그램\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TestDlg\0"
+            VALUE "LegalCopyright", "Copyright (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TestDlg.EXE\0"
+            VALUE "ProductName", "TestDlg 응용 프로그램\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x412, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_MAINFORM, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 395
+    END
+
+    IDD_SUBFORM1, DIALOG
+    BEGIN
+        RIGHTMARGIN, 398
+        BOTTOMMARGIN, 245
+    END
+
+    IDD_SUBFORM2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_SUBFORM3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_SUBFORM4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_SUBFORM5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_SUBFORM6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+
+    IDD_SUBFORM7, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 376
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 270
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+1                       24      DISCARDABLE     "xptheme.xml"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BT_ROLL             BITMAP  DISCARDABLE     "res\\test_over.bmp"
+IDB_BT_NOR              BITMAP  DISCARDABLE     "res\\test_nor.bmp"
+IDB_BT_MASK             BITMAP  DISCARDABLE     "res\\test_mask.bmp"
+IDB_DAP_ROLL            BITMAP  DISCARDABLE     "res\\dap_over.bmp"
+IDB_DAP_MASK            BITMAP  DISCARDABLE     "res\\dap_mask.bmp"
+IDB_DAP_NOR             BITMAP  DISCARDABLE     "res\\dap_nor.bmp"
+IDB_START_ROLL          BITMAP  DISCARDABLE     "res\\start_over.bmp"
+IDB_START_MASK          BITMAP  DISCARDABLE     "res\\start_mask.bmp"
+IDB_START_NOR           BITMAP  DISCARDABLE     "res\\start_nor.bmp"
+IDB_QUIT_OVER           BITMAP  DISCARDABLE     "res\\quit_over.bmp"
+IDB_MINI_MASK           BITMAP  DISCARDABLE     "res\\mini_mask.bmp"
+IDB_MINI_NOR            BITMAP  DISCARDABLE     "res\\mini_nor.bmp"
+IDB_MINI_OVER           BITMAP  DISCARDABLE     "res\\mini_over.bmp"
+IDB_QUIT_MASK           BITMAP  DISCARDABLE     "res\\quit_mask.bmp"
+IDB_QUIT_NOR            BITMAP  DISCARDABLE     "res\\quit_nor.bmp"
+IDB_TITLEBAR            BITMAP  DISCARDABLE     "res\\title_bar.bmp"
+IDB_BACK_NEW            BITMAP  DISCARDABLE     "res\\back_new.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "TestDlg 정보(&A)..."
+END
+
+#endif    // Korean resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_KOR)
+#ifdef _WIN32
+LANGUAGE 18, 1
+#pragma code_page(949)
+#endif //_WIN32
+#include "res\TestDlg.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.kor\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
