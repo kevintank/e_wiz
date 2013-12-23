@@ -67,7 +67,7 @@ BOOL CSubFormDlg1::OnInitDialog()
 	CDialog::OnInitDialog();
 	
 	// TODO: Add extra initialization here
-	//배경 그림의 크기 만큼 윈도우 크기를 지정해 줄수 있다. 
+	//배경 그림의 크기 만큼 윈도우 크기를 지정해 줄수 있다. 그쵸  
 	BITMAP bmpInfo;
 	m_bmpMainBG.LoadBitmap(IDB_BACK_NEW);
 	m_bmpMainBG.GetBitmap(&bmpInfo);
